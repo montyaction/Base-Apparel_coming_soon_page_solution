@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+/* font family */
+/* Color */
+/* Primary */
+/* Neutral */
+/* Gradients */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.main-container {
+  height: 80rem;
+  background-image: url("../images/bg-pattern-desktop.svg"), linear-gradient(135deg, white, #fff5f5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6.5rem 21.5rem 16.5rem 16.5rem;
+}
+
+.brand-logo {
+  margin-bottom: 13.5rem;
+}
+
+picture {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 100vh;
+}
+
+.image {
+  height: 100%;
+}
+
+.title {
+  width: 36rem;
+  color: #413a3a;
+  font-size: 6.1rem;
+  font-weight: 600;
+  letter-spacing: .325em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.title span {
+  font-weight: 300;
+  color: #ce9797;
+}
+
+.description {
+  width: 45rem;
+  line-height: 1.7;
+  letter-spacing: .005em;
+  margin-bottom: 4rem;
+}
+
+form {
+  max-width: 45rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.form-content {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(65, 58, 58, 0.2);
+  border-radius: 50px;
+}
+
+.input {
+  width: 80%;
+}
+
+input {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  padding: 1.5rem 3rem;
+  background-color: transparent;
+}
+
+.icon {
+  opacity: 0;
+  padding-right: 10px;
+}
+
+.error-mgs {
+  color: #f96262;
+  padding: .8rem 0 0 2.4rem;
+  font-size: 1.2rem;
+}
+
+.submit-btn {
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: none;
+  border-radius: 50px;
+  width: 10rem;
+  padding: 1.6rem;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+/* Footer Section */
+footer {
+  /* margin-top: 14rem; */
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+}
+
+.attribution a {
+  color: #413a3a;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1240px) {
+  .main-container {
+    width: 85%;
+    height: unset;
+    padding: 0 0 14.5rem 0;
+    margin: 0 auto;
+  }
+  .main-container .brand-logo {
+    padding: 0;
+    margin: 3.5rem 3rem;
+  }
+  .main-container picture {
+    display: block;
+    position: static;
+    width: 100%;
+  }
+  .main-container picture .image {
+    width: 100%;
+  }
+  .main-container .title,
+  .main-container .description {
+    text-align: center;
+  }
+  .main-container .title {
+    margin: 6.25rem auto 2.75rem;
+    padding-top: 2rem;
+    font-size: 4rem;
+    width: auto;
+  }
+  .main-container .description {
+    max-width: 30rem;
+    width: 95%;
+    margin: 0 auto 4rem;
+    padding-bottom: 1.4rem;
+  }
+  .main-container form {
+    max-width: 45rem;
+    width: 85%;
+  }
+  .main-container form .form-content {
+    width: auto;
+  }
+  .main-container form .form-content bottom {
+    width: 70px;
+  }
+  .main-container form .error-mgs {
+    text-align: center;
+    padding: .5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .main-container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+
+    /* font family */
+    $josefin-sans: 'Josefin Sans', sans-serif;
+
+    /* Color */
+    /* Primary */
+    $desa-red: hsl(0, 36%, 70%);
+    $soft-red: hsl(0, 93%, 68%);
+    /* Neutral */
+    $dark-grayish-red: hsl(0, 6%, 24%);
+    /* Gradients */
+    $linear-1:  hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    $linear-2:  hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $desa-red;
+    font-family: $josefin-sans;
+    font-size: 1.6rem;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.main-container {
+    height: 80rem;
+    background-image: url("../images/bg-pattern-desktop.svg"),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6.5rem 21.5rem 16.5rem 16.5rem;
+}
+
+.brand-logo {
+    margin-bottom: 13.5rem;
+}
+
+picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 100vh;
+}
+
+.image {
+    height: 100%;
+}
+
+.title {
+    width: 36rem;
+    color: $dark-grayish-red;
+    font-size: 6.1rem;
+    font-weight: 600;
+    letter-spacing: .325em;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    
+    span {
+       font-weight: 300;
+       color: $desa-red;
+    }
+}
+
+
+.description {
+    width: 45rem;
+    line-height: 1.7;
+    letter-spacing: .005em;
+    margin-bottom: 4rem;
+}
+
+form {
+    max-width: 45rem;
+    width: 100%;
+    margin-inline: auto;
+}   
+    
+.form-content {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid hsla(0, 6%, 24%, 0.2);
+        border-radius: 50px;
+}
+
+.input {
+    width: 80%;
+}
+
+input {
+    width: 100%;
+    font: inherit;  
+    color: inherit;
+    border: none;
+    outline: none;
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+}
+
+.icon {
+    opacity: 0;
+    padding-right: 10px;
+}
+
+.error-mgs {
+    color: $soft-red;
+    padding: .8rem 0 0 2.4rem;
+    font-size: 1.2rem;
+}
+
+.submit-btn {
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  border-radius: 50px;
+  width: 10rem;
+  padding: 1.6rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+      cursor: pointer;
+      opacity: .7;
+  }
+}
+
+
+/* Footer Section */
+footer {
+  /* margin-top: 14rem; */
+  text-align: center;
+}
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: $dark-grayish-red;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+}
+
+// Media Queries
+@media screen and (max-width: 1240px) {
+
+    .main-container {
+        width: 85%;
+        height: unset;
+        padding: 0 0 14.5rem 0;
+        margin: 0 auto;
+
+        .brand-logo {
+            padding: 0;
+            margin: 3.5rem 3rem;
+        }
+
+        picture {
+            display: block;
+            position: static;
+            width: 100%;
+
+            .image {
+                width: 100%;
+            }
+        }
+
+        .title,
+        .description {
+            text-align: center;
+        }
+        
+        .title {
+            margin: 6.25rem auto 2.75rem;
+            padding-top: 2rem;
+            font-size: 4rem;
+            width: auto;
+        }
+
+        .description {
+            max-width: 30rem;
+            width: 95%;
+            margin: 0 auto 4rem;
+            padding-bottom: 1.4rem;
+        }
+
+        form {
+            max-width: 45rem;
+            width: 85%;
+
+            .form-content {
+                width: auto;
+
+                // input {
+                //     padding: 1rem 1.5rem;
+                // }
+
+                bottom {
+                    width: 70px;
+                }
+            }
+
+            .error-mgs {
+                text-align: center;
+                padding: .5rem 1.5rem;
+            }
+        }
+
+    }
+    
+}
+
+@media screen and (max-width: 670px) {
+    
+    .main-container {
+        width: 100%;
+    }
+}
