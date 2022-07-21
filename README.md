@@ -47,7 +47,7 @@ Users should be able to:
 For future projects I need to focus on using more advanced CSS to create effects.
 
 ### Useful resources
-- [JavaScript: HTML Form - email validation] -This helped email validation
+- [JavaScript: HTML Form - email validation](https://www.w3resource.com/javascript/form/email-validation.php) -This helped email validation
 
 - [W3 School](https://www.w3schools.com/default.asp) - This helped me for my basic knowledge. I really liked this pattern and will use it going forward.
 - [How To Create an Overlay Image Icon](https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp) - This helped me to add an overlay to the image on hover.
