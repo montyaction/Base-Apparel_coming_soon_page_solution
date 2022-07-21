@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/montyaction/Base-Apparel_coming_soon_page_solution)
-- Live Site URL: [Live site URL here](https://musical-donut-12636d.netlify.app/)
+- Live Site URL: [Live site URL here](https://base-apparel-coming-soon-page-solution-sand.vercel.app/)
 
 ## My process
 
